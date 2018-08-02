@@ -699,6 +699,7 @@ window.LCalendar = (function() {
                 _self.trigger.dispatchEvent(evt);
                 document.body.removeChild(_self.gearDate);
                 _self.gearDate=null;
+                _self.trigger.blur();
             }
 
             //日期确认
